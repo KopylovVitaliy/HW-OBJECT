@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Author {
     private String firstName;
     private String secondName;
@@ -13,5 +15,14 @@ public class Author {
 
     public String getSecondName() {
         return this.secondName;
+    }
+
+    public String getBookAuthor() {
+        return getFirstName() + " " + getSecondName();
+    }
+
+    @Override
+    public String toString() {
+        return firstName + " " + secondName;
     }
 }

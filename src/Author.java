@@ -17,9 +17,6 @@ public class Author {
         return this.secondName;
     }
 
-    public String getBookAuthor() {
-        return getFirstName() + " " + getSecondName();
-    }
 
     @Override
     public String toString() {
